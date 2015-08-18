@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D701DB811B81E9BE00CBAF40 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB801B81E9BE00CBAF40 /* libicucore.dylib */; };
+		D701DB831B81E9C600CBAF40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB821B81E9C600CBAF40 /* CFNetwork.framework */; };
+		D701DB851B81E9D000CBAF40 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB841B81E9D000CBAF40 /* Security.framework */; };
 		D7B5EF2F1B81E1FB00EF55D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF2E1B81E1FB00EF55D9 /* Foundation.framework */; };
 		D7B5EF311B81E1FB00EF55D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF301B81E1FB00EF55D9 /* CoreGraphics.framework */; };
 		D7B5EF331B81E1FB00EF55D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF321B81E1FB00EF55D9 /* UIKit.framework */; };
@@ -19,6 +22,7 @@
 		D7B5EF4A1B81E1FB00EF55D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF321B81E1FB00EF55D9 /* UIKit.framework */; };
 		D7B5EF521B81E1FB00EF55D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7B5EF501B81E1FB00EF55D9 /* InfoPlist.strings */; };
 		D7B5EF541B81E1FB00EF55D9 /* WebSocketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B5EF531B81E1FB00EF55D9 /* WebSocketDemoTests.m */; };
+		D7B5EF5F1B81E20F00EF55D9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B5EF5E1B81E20F00EF55D9 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D701DB801B81E9BE00CBAF40 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D701DB821B81E9C600CBAF40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D701DB841B81E9D000CBAF40 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D7B5EF2B1B81E1FB00EF55D9 /* WebSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B5EF2E1B81E1FB00EF55D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7B5EF301B81E1FB00EF55D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +55,8 @@
 		D7B5EF4F1B81E1FB00EF55D9 /* WebSocketDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebSocketDemoTests-Info.plist"; sourceTree = "<group>"; };
 		D7B5EF511B81E1FB00EF55D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7B5EF531B81E1FB00EF55D9 /* WebSocketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketDemoTests.m; sourceTree = "<group>"; };
+		D7B5EF5D1B81E20F00EF55D9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D7B5EF5E1B81E20F00EF55D9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D701DB851B81E9D000CBAF40 /* Security.framework in Frameworks */,
+				D701DB831B81E9C600CBAF40 /* CFNetwork.framework in Frameworks */,
+				D701DB811B81E9BE00CBAF40 /* libicucore.dylib in Frameworks */,
 				D7B5EF311B81E1FB00EF55D9 /* CoreGraphics.framework in Frameworks */,
 				D7B5EF331B81E1FB00EF55D9 /* UIKit.framework in Frameworks */,
 				D7B5EF2F1B81E1FB00EF55D9 /* Foundation.framework in Frameworks */,
@@ -96,6 +108,9 @@
 		D7B5EF2D1B81E1FB00EF55D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D701DB841B81E9D000CBAF40 /* Security.framework */,
+				D701DB821B81E9C600CBAF40 /* CFNetwork.framework */,
+				D701DB801B81E9BE00CBAF40 /* libicucore.dylib */,
 				D7B5EF2E1B81E1FB00EF55D9 /* Foundation.framework */,
 				D7B5EF301B81E1FB00EF55D9 /* CoreGraphics.framework */,
 				D7B5EF321B81E1FB00EF55D9 /* UIKit.framework */,
@@ -109,6 +124,8 @@
 			children = (
 				D7B5EF3D1B81E1FB00EF55D9 /* AppDelegate.h */,
 				D7B5EF3E1B81E1FB00EF55D9 /* AppDelegate.m */,
+				D7B5EF5D1B81E20F00EF55D9 /* RootViewController.h */,
+				D7B5EF5E1B81E20F00EF55D9 /* RootViewController.m */,
 				D7B5EF401B81E1FB00EF55D9 /* Images.xcassets */,
 				D7B5EF351B81E1FB00EF55D9 /* Supporting Files */,
 			);
@@ -241,6 +258,7 @@
 			files = (
 				D7B5EF3F1B81E1FB00EF55D9 /* AppDelegate.m in Sources */,
 				D7B5EF3B1B81E1FB00EF55D9 /* main.m in Sources */,
+				D7B5EF5F1B81E20F00EF55D9 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +455,7 @@
 				D7B5EF591B81E1FB00EF55D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7B5EF5A1B81E1FB00EF55D9 /* Build configuration list for PBXNativeTarget "WebSocketDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +464,7 @@
 				D7B5EF5C1B81E1FB00EF55D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
