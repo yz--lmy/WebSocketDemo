@@ -10,6 +10,7 @@
 		D701DB811B81E9BE00CBAF40 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB801B81E9BE00CBAF40 /* libicucore.dylib */; };
 		D701DB831B81E9C600CBAF40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB821B81E9C600CBAF40 /* CFNetwork.framework */; };
 		D701DB851B81E9D000CBAF40 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D701DB841B81E9D000CBAF40 /* Security.framework */; };
+		D789FD751B82DAA500614F8C /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D789FD741B82DAA500614F8C /* SRWebSocket.m */; };
 		D7B5EF2F1B81E1FB00EF55D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF2E1B81E1FB00EF55D9 /* Foundation.framework */; };
 		D7B5EF311B81E1FB00EF55D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF301B81E1FB00EF55D9 /* CoreGraphics.framework */; };
 		D7B5EF331B81E1FB00EF55D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5EF321B81E1FB00EF55D9 /* UIKit.framework */; };
@@ -39,6 +40,9 @@
 		D701DB801B81E9BE00CBAF40 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D701DB821B81E9C600CBAF40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D701DB841B81E9D000CBAF40 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D789FD721B82DAA500614F8C /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		D789FD731B82DAA500614F8C /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		D789FD741B82DAA500614F8C /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		D7B5EF2B1B81E1FB00EF55D9 /* WebSocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B5EF2E1B81E1FB00EF55D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7B5EF301B81E1FB00EF55D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D789FD701B82DAA500614F8C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D789FD711B82DAA500614F8C /* SocketRocket */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D789FD711B82DAA500614F8C /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				D789FD721B82DAA500614F8C /* SocketRocket-Prefix.pch */,
+				D789FD731B82DAA500614F8C /* SRWebSocket.h */,
+				D789FD741B82DAA500614F8C /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
 		D7B5EF221B81E1FB00EF55D9 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +144,7 @@
 		D7B5EF341B81E1FB00EF55D9 /* WebSocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D789FD701B82DAA500614F8C /* Lib */,
 				D7B5EF3D1B81E1FB00EF55D9 /* AppDelegate.h */,
 				D7B5EF3E1B81E1FB00EF55D9 /* AppDelegate.m */,
 				D7B5EF5D1B81E20F00EF55D9 /* RootViewController.h */,
@@ -256,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D789FD751B82DAA500614F8C /* SRWebSocket.m in Sources */,
 				D7B5EF3F1B81E1FB00EF55D9 /* AppDelegate.m in Sources */,
 				D7B5EF3B1B81E1FB00EF55D9 /* main.m in Sources */,
 				D7B5EF5F1B81E20F00EF55D9 /* RootViewController.m in Sources */,
